@@ -1,0 +1,5 @@
+---
+rules:
+  - path: '$["web-app-external-sites"].config.dashboards[0].sites[?(@.name == "Administration")]'
+    rule: included-for-claim
+    value: $.groups[?(@ == "admin")]

@@ -1,0 +1,32 @@
+web-app-external-sites:
+  config:
+    dashboards:
+      - name: 'My Dashboard'
+        path: '/'
+        color: 'green'
+        icon: 'grid'
+        sites:
+          - name: 'Plex'
+            url: 'https://plex.local'
+            target: 'external'
+            color: '#e5a00d'
+            icon: 'play'
+            priority: 50
+            description: 'Multimedia streaming service'
+
+          - name: 'Office'
+            sites:
+              - name: 'Paperless NGX'
+                url: 'https://paperless.local'
+                target: 'external'
+                color: '#17541f'
+                icon: 'leaf'
+                description: 'Document management system.'
+
+          - name: 'Administration'
+            sites:
+              - name: 'OpenMediaVault'
+                url: 'http://omv.local/'
+                color: '#17541f'
+                icon: 'server'
+                description: 'Server administration panel.'
